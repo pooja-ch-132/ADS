@@ -8,13 +8,12 @@ package arraylistdemo;
  *
  * @author Poojitha
  */
-public class Emp {
-     int eid;
-    String ename;
-    
-    Emp(int eid, String ename){
-    this.eid = eid;
-    this.ename = ename;
-}
+public class Student {
+    int sid;
+    String sname;
+    Student(int sid,String sname){
+        this.sid = sid;
+        this.sname = sname;
+    }
     
 }
