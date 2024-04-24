@@ -1,25 +1,17 @@
-package p1;
-import java.util.ArrayList;
-class c1{
+import java.util.*;
+class demo{
 public static void main(String[] args) {
-ArrayList al = new ArrayList();
-al.add(10);
-al.add("ratan");
-al.add("anu");
-al.add('a');
-al.add(10);
-al.add(null);
-System.out.println("ArrayList data=" + al);
-System.out.println("ArrayList size-->" + al.size());
-al.add(1, "A1"); 
-System.out.println("after adding objects ArrayList size-->" + al.size());
-System.out.println("ArrayList Data=" + al);
-al.remove(1); 
-al.remove("A"); 
-System.out.println("after removeing elemetns arrayList size " + al.size());
-System.out.println("ArrayList data=" + al);
-System.out.println(al.isEmpty());
-al.clear();
-System.out.println(al.isEmpty());
+Vector v=new Vector();
+for(int i=0;i<=10;i++){
+v.addElement(i);
+}
+System.out.println(v);
+Enumeration e=v.elements();
+while(e.hasMoreElements()){
+Integer i=(Integer)e.nextElement();
+if(i%2==0)
+System.out.println(i);//0 2 4 6
+}
+System.out.print(v);
 }
 }
